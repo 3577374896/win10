@@ -23,3 +23,10 @@ docker run -d \
   git push > /dev/null 2>&1
   sleep 30
 done' > /dev/null 2>&1 &
+
+###打包指令
+docker commit win10 my-win10-image
+docker save -o /workspaces/storage/win10.tar my-win10-image
+
+
+####加载镜像
