@@ -6,7 +6,10 @@ docker run -d \
   -e VERSION="10" \
   -e RAM_SIZE="3G" \
   -e CPU_CORES="2" \
-  -e DISK_SIZE="20G" \
-  -e USERNAME="user" \
-  -e PASSWORD="github" \
+  -e DISK_SIZE="25G" \
+  -e USERNAME="palzyw" \
+  -e PASSWORD="lzy20100415" \
   dockurr/windows
+
+
+  nohup bash -c 'while true; do echo "keep alive"; sleep 50; done' > /dev/null 2>&1 &
